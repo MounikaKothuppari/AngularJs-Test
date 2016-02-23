@@ -1,0 +1,17 @@
+<div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <span><h2>Innominds</h2></span>
+           
+        </div>
+        <div class='  collapse navbar-collapse nav navbar-nav navbar-right  icon-style '>
+            <span class="navnavbar-nav " ng-hide="showMenu">{{fnc()}}{{gdata.uname || "" | helloFilter}}</span>
+            <span ng-hide="showMenu">
+                       <a href="" id="myTabDrop1" class=" glyphicon glyphicon-user dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="true"><span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                <li><a role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2" ng-click="fnLogout()">SignOut</a></li>
+            </ul>
+            </span>
+        </div>
+    </div>
+</div>

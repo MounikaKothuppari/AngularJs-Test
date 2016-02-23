@@ -1,0 +1,132 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+body {
+    height: 100vh;
+    background-image: url(../images/bback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+/* Custom page header */
+
+.header {
+    top: 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    height: 65px;
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+
+/* Custom page footer */
+
+.footer {
+    bottom: 0;
+    height: 40px;
+    padding-top: 19px;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+   
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+    /* Remove the padding we set earlier */
+    .header,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 10px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+.cont {
+    margin-top: 80px;
+    height: calc( 100% - 105px);
+    box-sizing: border-box;
+}
+
+.icon-style {
+    padding-top: 45px;
+}
+
+.navbar {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    
+   
+}
+
+#dropdown2-tab:hover {
+    cursor: pointer;
+    background-color: rgba(209, 53, 42, 0.3);
+}
+
+#js-navbar-collapse1 {
+    ul {
+        li {
+            a {
+                color: white;
+            }
+            a:focus{ background-color:rgba(130, 232, 42, 0.3);}
+            a:hover {
+                background-color: rgba(209, 53, 42, 0.3);
+                color: black;
+            }
+        }
+        li.active {
+            a,
+            a:focus,a:hover {
+                color: black;
+            }
+        }
+    }
+}
+h4{
+    color:white;
+}
